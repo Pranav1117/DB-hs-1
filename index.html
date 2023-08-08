@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handson 1</title>
+</head>
+
+<body>
+    <ol>
+        <li>Create a database , give it name like "Human_Resource". Create a collection inside this named "employee"
+        </li>
+        <p>Ans:use Human_Resource</p>
+
+        <hr>
+
+        <li>Query the collection "employee" and list all the documents</li>
+        <p>Ans:db.employee.find()</p>
+
+        <li>Query the collection "employee" and list the employees who are having salary more than 30000</li>
+        <p>Ans:db.employee.find({"salary":{"$gt":"30000"}})</p>
+
+        <li>Query the collection "employee" and list the employees who are having experience more than 2 years.</li>
+        <p>Ans:db.employee.find({"overallExp":{"$gt":"2"}})</p>
+
+        <li>Query the collection "employee" and list the employees who are graduated after 2015 and having experience
+            more than 1 year </li>
+        <p>Ans:</p>
+
+        <li>Query the collection "employee" and update the salary of the employee whose salary is greater than 70000 to
+            65000.</li>
+        <p>Ans:</p>
+
+
+        <li>Delete all the documents from "employee" where last company is Y</li>
+        <p>Ans:</p>
+    </ol>
+</body>
+
+</html>
